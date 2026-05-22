@@ -6,5 +6,9 @@ una vez teniendo instalado rust y las librerias de c++, para instalar mdbook nec
 para crear un libro necesitamos crear una carpetra mediante ese comando: mdbook init my-first-book, para correr el mdbook tenemos que poner este codigo: mdbook serve --open
 
 para exportarlo en pdf se necesita instalar esta extension mediante la terminal de visual studio code: cargo install mdbook-pdf.
-En book.toml poner este codigo: [output.pdf].
+En book.toml poner este codigo:
+[output.html]
+print = { enable = true }
+
+[output.pdf].
 Para exportarlo como PDF en la terminal del libro que queres exportar pones este codigo: mdbook build
